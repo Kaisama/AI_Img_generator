@@ -20,7 +20,7 @@ e.preventDefault();
 if(form.prompt && form.photo){
   setLoading(true);
   try {
-    const response=await fetch('http://localhost:8080/api/v1/post',{
+    const response=await fetch('https://ai-img-generator-1.onrender.com/api/v1/post',{
       method:"POST",
       headers:{
         'Content-Type':'application/json',
@@ -50,7 +50,7 @@ if(form.prompt && form.photo){
     if(form.prompt){
       try {
         setGeneratingImage(true);
-        const response =await fetch('http://localhost:8080/api/v1/dalle',{
+        const response =await fetch('https://ai-img-generator-1.onrender.com/api/v1/dalle',{
           method:'POST',
           headers:{
             'Content-Type':'application/json'
