@@ -10,9 +10,7 @@ const openai = new OpenAI({
     apiKey: process.env.OPNEAI_API_KEY,
   });
 
-router.route('/').get((req, res) => {
-  res.send("dalle");
-});
+
 
 router.route('/').post(async(req,res)=>{
   try {
